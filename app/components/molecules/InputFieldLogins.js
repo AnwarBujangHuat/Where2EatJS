@@ -1,7 +1,12 @@
-import { Image, StyleSheet, TextInput, View } from 'react-native';
+import {
+  Image,
+  StyleSheet,
+  TextInput,
+  View,
+} from 'react-native';
 import React from 'react';
 import { colors } from '../../configs/Const';
-import { GStyles } from '../../Styles';
+import { GStyles } from '../../configs/Styles';
 
 export const InputFieldLogins = ({
   testID,

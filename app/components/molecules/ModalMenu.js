@@ -15,7 +15,7 @@ import addIcon from '../../assets/images/plus.png';
 import { ConstString } from '../../configs/Strings';
 import { launchImagePicker } from '../../ImagePicker';
 import { colors } from '../../configs/Const';
-import { GStyles } from '../../Styles';
+import { GStyles } from '../../configs/Styles';
 
 const { width } = Dimensions.get('window');
 export const ModalMenu = ({

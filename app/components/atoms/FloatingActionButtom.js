@@ -7,7 +7,7 @@ import {
 import React from 'react';
 import rouletteIcon from '../../assets/images/bet.png';
 import { colors } from '../../configs/Const';
-import { GStyles } from '../../Styles';
+import { GStyles } from '../../configs/Styles';
 import TestIDs from '../../../e2e/TestIDs';
 
 export const FloatingActionButton = ({ onPress }) => {

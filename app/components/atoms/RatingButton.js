@@ -8,7 +8,7 @@ import {
 import React from 'react';
 import star from '../../assets/images/star2.png';
 import { colors } from '../../configs/Const';
-import { GStyles } from '../../Styles';
+import { GStyles } from '../../configs/Styles';
 
 export const RatingButton = ({ onPress, rating, selected }) => {
   let backGroundColor = rating === selected ? colors.primary : colors.secondBg;

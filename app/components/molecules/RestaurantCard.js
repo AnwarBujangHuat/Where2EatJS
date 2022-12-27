@@ -15,7 +15,7 @@ import {
 } from '../../configs/Const';
 import addImage from '../../assets/images/addImage.png';
 import FastImage from 'react-native-fast-image';
-import { GStyles } from '../../Styles';
+import { GStyles } from '../../configs/Styles';
 
 export const RestaurantCard = ({
   onPress,

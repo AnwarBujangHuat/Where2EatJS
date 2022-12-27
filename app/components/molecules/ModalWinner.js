@@ -16,7 +16,7 @@ import {
   icons,
 } from '../../configs/Const';
 import Modal from 'react-native-modal';
-import { GStyles } from '../../Styles';
+import { GStyles } from '../../configs/Styles';
 
 const { width } = Dimensions.get('window');
 export const ModalWinner = ({

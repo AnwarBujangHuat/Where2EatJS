@@ -18,7 +18,7 @@ import { ModalUploading } from '../../../components/molecules/ModalUploading';
 import { ModalMenuDetails } from '../../../components/molecules/ModalMenuDetails';
 import { FoodCard } from '../../../components/molecules/FoodCard';
 import { SearchButton } from '../../../components/atoms/SearchButton';
-import { GStyles } from '../../../Styles';
+import { GStyles } from '../../../configs/Styles';
 import { colors } from '../../../configs/Const';
 import MultiPickerBox from '../../../components/molecules/MultiPickerBox';
 

@@ -12,7 +12,7 @@ import nasiAyam from '../../assets/images/salad.jpg';
 import edit from '../../assets/images/editing.png';
 import Delete from '../../assets/images/bin.png';
 import FastImage from 'react-native-fast-image';
-import { GStyles } from '../../Styles';
+import { GStyles } from '../../configs/Styles';
 import { colors } from '../../configs/Const';
 
 export const FoodCard = ({
