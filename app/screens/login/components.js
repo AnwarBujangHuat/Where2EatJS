@@ -8,10 +8,10 @@ import {
   View,
 } from 'react-native';
 import CheckBox from '@react-native-community/checkbox';
-import Logo from '../../assets/allfood.png';
+import Logo from '../../assets/images/allfood.png';
 import { InputFieldLogins } from '../../components/molecules/InputFieldLogins';
-import email from '../../assets/email.png';
-import password from '../../assets/password.png';
+import email from '../../assets/images/email.png';
+import password from '../../assets/images/password.png';
 import { IconButton } from '../../components/molecules/IconButton';
 import { SocialButton } from '../../components/atoms/SocialButton';
 import { ConstString } from '../../configs/Strings';

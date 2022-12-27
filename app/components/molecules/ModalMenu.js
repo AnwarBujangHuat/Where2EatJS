@@ -11,7 +11,7 @@ import {
   View,
 } from 'react-native';
 import Modal from 'react-native-modal';
-import addIcon from '../../assets/plus.png';
+import addIcon from '../../assets/images/plus.png';
 import { ConstString } from '../../configs/Strings';
 import { launchImagePicker } from '../../ImagePicker';
 import { colors } from '../../configs/Const';

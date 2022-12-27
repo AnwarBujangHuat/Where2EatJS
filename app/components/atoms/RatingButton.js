@@ -1,6 +1,12 @@
-import { Image, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
+import {
+  Image,
+  StyleSheet,
+  Text,
+  TouchableOpacity,
+  View,
+} from 'react-native';
 import React from 'react';
-import star from '../../assets/star2.png';
+import star from '../../assets/images/star2.png';
 import { colors } from '../../configs/Const';
 import { GStyles } from '../../Styles';
 

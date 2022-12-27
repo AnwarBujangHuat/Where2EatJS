@@ -8,9 +8,12 @@ import {
   View,
 } from 'react-native';
 import { RateLabel } from '../atoms/RateLabel';
-import locationIcon from '../../assets/location.png';
-import { colors, icons } from '../../configs/Const';
-import addImage from '../../assets/addImage.png';
+import locationIcon from '../../assets/images/location.png';
+import {
+  colors,
+  icons,
+} from '../../configs/Const';
+import addImage from '../../assets/images/addImage.png';
 import FastImage from 'react-native-fast-image';
 import { GStyles } from '../../Styles';
 
@@ -32,9 +35,9 @@ export const RestaurantCard = ({
               source={
                 image
                   ? {
-                      uri: image,
-                      priority: FastImage.priority.normal,
-                    }
+                    uri: image,
+                    priority: FastImage.priority.normal,
+                  }
                   : addImage
               }
               style={{ height: 140, marginBottom: 5, resizeMode: 'contain' }}>

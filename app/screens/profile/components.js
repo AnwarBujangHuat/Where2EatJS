@@ -9,7 +9,7 @@ import {
   View,
 } from 'react-native';
 import { BackButton } from '../../components/atoms/BackButton';
-import personIcon from '../../assets/programmer.png';
+import personIcon from '../../assets/images/programmer.png';
 import { EditableLabel } from '../../components/atoms/EditableLabel';
 import { ModalEdit } from '../../components/molecules/ModalEdit';
 import { colors } from '../../configs/Const';

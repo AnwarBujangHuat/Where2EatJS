@@ -9,7 +9,7 @@ import {
 } from 'react-native';
 import FastImage from 'react-native-fast-image';
 import Modal from 'react-native-modal';
-import nasiAyam from '../../assets/NasiAyam.jpg';
+import nasiAyam from '../../assets/images/NasiAyam.jpg';
 import { colors } from '../../configs/Const';
 import { GStyles } from '../../Styles';
 
@@ -34,9 +34,9 @@ export const ModalMenuDetails = ({ closeModal, isModalVisible, foodItem }) => {
                 source={
                   image !== undefined
                     ? {
-                        uri: image,
-                        priority: FastImage.priority.high,
-                      }
+                      uri: image,
+                      priority: FastImage.priority.high,
+                    }
                     : nasiAyam
                 }
                 style={{

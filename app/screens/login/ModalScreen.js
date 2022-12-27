@@ -1,10 +1,15 @@
 import * as React from 'react';
 import { useEffect } from 'react';
-import { Alert, Dimensions, SafeAreaView, StyleSheet } from 'react-native';
+import {
+  Alert,
+  Dimensions,
+  SafeAreaView,
+  StyleSheet,
+} from 'react-native';
 import { PopulateRestaurantList } from '../../store/thunks';
 import { useDispatch } from 'react-redux';
 import LottieView from 'lottie-react-native';
-import Welcome from '../../assets/welcome.json';
+import Welcome from '../../assets/lottie/welcome.json';
 import TestIDs from '../../../e2e/TestIDs';
 import { routes } from '../../navigation/routes';
 import { colors } from '../../configs/Const';
@@ -14,7 +19,7 @@ const { width } = Dimensions.get('window');
 export const ModalScreen = ({ navigation }) => {
   const dispatch = useDispatch();
 
-  const fetch = async () => {
+  const fetch = async() => {
     const response = await dispatch(PopulateRestaurantList());
     const { payload } = response;
     if (!payload.result) {

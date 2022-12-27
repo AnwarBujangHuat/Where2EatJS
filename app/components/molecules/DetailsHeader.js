@@ -8,8 +8,8 @@ import {
 } from 'react-native';
 import React from 'react';
 import { BackButton } from '../atoms/BackButton';
-import addImage from '../../assets/addImage.png';
-import logoIcon from '../../assets/allfood.png';
+import addImage from '../../assets/images/addImage.png';
+import logoIcon from '../../assets/images/allfood.png';
 import { RateLabel } from '../atoms/RateLabel';
 import { SearchButton } from '../atoms/SearchButton';
 import { GStyles } from '../../Styles';

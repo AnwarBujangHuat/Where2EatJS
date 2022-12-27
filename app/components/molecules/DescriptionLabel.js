@@ -1,6 +1,12 @@
-import { Image, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
+import {
+  Image,
+  StyleSheet,
+  Text,
+  TouchableOpacity,
+  View,
+} from 'react-native';
 import React from 'react';
-import locationIcon from '../../assets/location.png';
+import locationIcon from '../../assets/images/location.png';
 import { GStyles } from '../../Styles';
 import { colors } from '../../configs/Const';
 

@@ -8,10 +8,13 @@ import {
   TouchableOpacity,
   View,
 } from 'react-native';
-import logoIcon from '../../assets/allfood.png';
-import locationIcon from '../../assets/location.png';
+import logoIcon from '../../assets/images/allfood.png';
+import locationIcon from '../../assets/images/location.png';
 import FastImage from 'react-native-fast-image';
-import { colors, icons } from '../../configs/Const';
+import {
+  colors,
+  icons,
+} from '../../configs/Const';
 import Modal from 'react-native-modal';
 import { GStyles } from '../../Styles';
 
@@ -45,12 +48,12 @@ export const ModalWinner = ({
                 source={
                   image !== undefined
                     ? {
-                        uri: image,
-                        priority: FastImage.priority.high,
-                      }
+                      uri: image,
+                      priority: FastImage.priority.high,
+                    }
                     : {
-                        uri: 'https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/5eeea355389655.59822ff824b72.gif',
-                      }
+                      uri: 'https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/5eeea355389655.59822ff824b72.gif',
+                    }
                 }
                 style={{
                   height: 200,

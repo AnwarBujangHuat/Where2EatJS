@@ -1,6 +1,12 @@
-import { Image, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
+import {
+  Image,
+  StyleSheet,
+  Text,
+  TouchableOpacity,
+  View,
+} from 'react-native';
 import React from 'react';
-import editIcon from '../../assets/editing.png';
+import editIcon from '../../assets/images/editing.png';
 import { colors } from '../../configs/Const';
 
 export const EditableLabel = ({ onPress, title, information, icon }) => {

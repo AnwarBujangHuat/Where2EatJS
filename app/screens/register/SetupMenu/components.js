@@ -12,7 +12,7 @@ import {
 import { BackButton } from '../../../components/atoms/BackButton';
 import { ConstString } from '../../../configs/Strings';
 import { xorBy } from 'lodash';
-import addIcon from '../../../assets/plus.png';
+import addIcon from '../../../assets/images/plus.png';
 import { ModalMenu } from '../../../components/molecules/ModalMenu';
 import { ModalUploading } from '../../../components/molecules/ModalUploading';
 import { ModalMenuDetails } from '../../../components/molecules/ModalMenuDetails';
@@ -70,9 +70,9 @@ export const SetupMenuComponents = props => {
   const renderMenu = category => {
     return editorMode
       ? //if Restaurant Exist and in Editor Mode then filter existing MENU
-        foodList.filter(foods => foods.category === category)
+      foodList.filter(foods => foods.category === category)
       : //First time Create and not Editor Mode then show temp menu
-        Menu.filter(foods => foods.category === category);
+      Menu.filter(foods => foods.category === category);
   };
   const renderSelectedCategory = () => {
     //Sort Category based on id to maintain order {Main Dish, Side Dish, Dessert, Appetizer, Drinks }

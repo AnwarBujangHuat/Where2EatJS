@@ -1,10 +1,18 @@
 import React from 'react';
-import { FlatList, SafeAreaView, StyleSheet, View } from 'react-native';
+import {
+  FlatList,
+  SafeAreaView,
+  StyleSheet,
+  View,
+} from 'react-native';
 import { Header } from '../../components/molecules/Header';
-import personIcon from '../../assets/programmer.png';
+import personIcon from '../../assets/images/programmer.png';
 import { SearchBar } from '../../components/molecules/SearchBar';
-import search from '../../assets/search.png';
-import { colors, Const } from '../../configs/Const';
+import search from '../../assets/images/search.png';
+import {
+  colors,
+  Const,
+} from '../../configs/Const';
 import { ImageButton } from '../../components/atoms/ImageButton';
 import { RestaurantCard } from '../../components/molecules/RestaurantCard';
 import { FloatingActionButton } from '../../components/atoms/FloatingActionButtom';

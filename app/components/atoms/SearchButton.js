@@ -6,7 +6,7 @@ import {
   TouchableOpacity,
 } from 'react-native';
 import React from 'react';
-import searchIcon from '../../assets/search.png';
+import searchIcon from '../../assets/images/search.png';
 import { colors } from '../../configs/Const';
 import { GStyles } from '../../Styles';
 

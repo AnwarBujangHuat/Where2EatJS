@@ -1,9 +1,12 @@
-import { StyleSheet, View } from 'react-native';
+import {
+  StyleSheet,
+  View,
+} from 'react-native';
 import React from 'react';
 import { FloatingAction } from 'react-native-floating-action';
-import Menu from '../../assets/cheeseburger.png';
-import Details from '../../assets/details.png';
-import Edit from '../../assets/edit.png';
+import Menu from '../../assets/images/cheeseburger.png';
+import Details from '../../assets/images/details.png';
+import Edit from '../../assets/images/edit.png';
 import { ConstString } from '../../configs/Strings';
 import { colors } from '../../configs/Const';
 import { GStyles } from '../../Styles';

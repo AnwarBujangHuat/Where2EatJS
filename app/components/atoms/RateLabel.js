@@ -1,7 +1,13 @@
-import { Image, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
+import {
+  Image,
+  StyleSheet,
+  Text,
+  TouchableOpacity,
+  View,
+} from 'react-native';
 import React from 'react';
-import startIcon from '../../assets/star.png';
-import startIcon2 from '../../assets/star2.png';
+import startIcon from '../../assets/images/star.png';
+import startIcon2 from '../../assets/images/star2.png';
 import { colors } from '../../configs/Const';
 
 export const RateLabel = ({ rating, goToRating }) => {

@@ -12,7 +12,7 @@ import { Rating } from 'react-native-ratings';
 import React from 'react';
 import { BackButton } from '../../components/atoms/BackButton';
 import { RatingCard } from '../../components/molecules/RatingCard';
-import addIcon from '../../assets/plus.png';
+import addIcon from '../../assets/images/plus.png';
 import { ModalGiveRating } from '../../components/molecules/ModalGiveRating';
 import { BarChart } from 'react-native-chart-kit';
 import { RatingButton } from '../../components/atoms/RatingButton';
