@@ -1,7 +1,6 @@
 import React from 'react';
 import {
   Dimensions,
-  Modal,
   SafeAreaView,
   StyleSheet,
   Text,
@@ -11,6 +10,7 @@ import {
 } from 'react-native';
 import { colors } from '../../configs/Const';
 import { GStyles } from '../../configs/Styles';
+import Modal from 'react-native-modal';
 
 const { width } = Dimensions.get('window');
 
@@ -26,9 +26,7 @@ export const ModalEdit = ({
       {isModalVisible && (
         <SafeAreaView style={styles.screen}>
           <Modal
-            animationType="slide"
-            transparent
-            visible={isModalVisible}
+            isVisible={isModalVisible}
             presentationStyle="overFullScreen">
             <View style={styles.viewWrapper}>
               <View style={styles.modalView}>

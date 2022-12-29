@@ -93,9 +93,7 @@ export const ModalMenu = ({
       {{ isModalVisible } && (
         <SafeAreaView style={styles.screen}>
           <Modal
-            animationType="slide"
-            transparent
-            visible={isModalVisible}
+            isVisible={isModalVisible}
             onBackdropPress={() => closeModal()}
             onDismiss={closeModal}>
             <View style={styles.modalView}>

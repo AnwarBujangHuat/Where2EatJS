@@ -44,9 +44,7 @@ export const ModalGiveRating = ({
       {isModalVisible && (
         <SafeAreaView style={styles.screen}>
           <Modal
-            animationType="none"
-            transparent
-            visible={isModalVisible}
+            isVisible={isModalVisible}
             presentationStyle="overFullScreen"
             style={styles.viewWrapper}>
             {isUploading ? (

@@ -40,9 +40,7 @@ export const ModalUploading = ({
       {isModalVisible && (
         <SafeAreaView style={styles.screen}>
           <Modal
-            animationType="none"
-            transparent
-            visible={isModalVisible}
+            isVisible={isModalVisible}
             onDismiss={closeModal}
             style={styles.viewWrapper}>
             <View style={styles.modalView}>

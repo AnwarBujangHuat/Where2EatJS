@@ -37,9 +37,7 @@ export const ModalWinner = ({
       {isModalVisible && (
         <SafeAreaView style={styles.screen}>
           <Modal
-            animationType="none"
-            transparent
-            visible={isModalVisible}
+            isVisible={isModalVisible}
             onBackdropPress={closeModal}
             presentationStyle="overFullScreen"
             style={styles.viewWrapper}>

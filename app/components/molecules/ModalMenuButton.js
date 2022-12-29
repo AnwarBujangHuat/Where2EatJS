@@ -33,8 +33,6 @@ export const ModalMenuButton = ({ isModalVisible, onPress, closeModal }) => {
       {{ isModalVisible } && (
         <SafeAreaView>
           <Modal
-            animationType="fade"
-            transparent
             isVisible={isModalVisible}
             onBackdropPress={() => closeModal()}>
             <View style={styles.modalView}>

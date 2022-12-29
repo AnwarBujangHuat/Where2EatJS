@@ -41,8 +41,6 @@ export const ModalLocation = ({
       {{ isModalVisible } && (
         <SafeAreaView style={styles.screen}>
           <Modal
-            animationType="slide"
-            transparent
             isVisible={isModalVisible}
             onBackdropPress={() => closeModal()}
             onDismiss={closeModal}>

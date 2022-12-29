@@ -22,8 +22,6 @@ export const ModalMenuDetails = ({ closeModal, isModalVisible, foodItem }) => {
       {isModalVisible && (
         <SafeAreaView style={styles.screen}>
           <Modal
-            animationType="none"
-            transparent
             isVisible={isModalVisible}
             presentationStyle="overFullScreen"
             onBackdropPress={closeModal}
