@@ -1,17 +1,29 @@
 module.exports = {
+  // ... some other config
   presets: ['module:metro-react-native-babel-preset'],
+
   plugins: [
-    'react-native-reanimated/plugin',
-    ['@babel/plugin-transform-flow-strip-types'],
+    // ... some other plugins
     [
       'module-resolver',
       {
         root: ['./app'],
-        extensions: ['.ios.js', '.android.js', '.js', '.ios.jsx', '.android.jsx', '.jsx', '.json'],
         alias: {
-          app: './app',
-          '~': './app/components',
+          /**
+           * Regular expression is used to match all files inside `./src` directory and map each `.src/folder/[..]` to `~folder/[..]` path
+           */
+          'components': './app/components',
+          'images': './app/assets/images',
         },
+        extensions: [
+          '.ios.js',
+          '.android.js',
+          '.js',
+          '.json',
+          '.tsx',
+          '.ts',
+          '.native.js',
+        ],
       },
     ],
   ],

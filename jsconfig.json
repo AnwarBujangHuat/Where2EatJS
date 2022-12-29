@@ -1,12 +1,12 @@
 {
   "compilerOptions": {
-    "module": "commonjs",
-    "target": "es5",
-    "sourceMap": true,
     "baseUrl": ".",
     "paths": {
-      "~": [
+      "components/*": [
         "./app/components/*"
+      ],
+      "images/*": [
+        "./app/assets/images/*"
       ]
     }
   },

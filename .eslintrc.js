@@ -4,10 +4,9 @@ module.exports = {
   settings: {
     'import/resolver': {
       'babel-module': {
-        extensions: ['.ios.js', '.android.js', '.js', '.ios.jsx', '.android.jsx', '.jsx', '.json', '.node'],
+        extensions: ['.ios.js', '.android.js', '.js', '.json', '.node'],
         alias: {
           app: './app',
-          '~': './app/components',
         },
       },
     },

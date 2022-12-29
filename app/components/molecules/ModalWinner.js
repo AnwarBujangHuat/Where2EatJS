@@ -8,7 +8,7 @@ import {
   TouchableOpacity,
   View,
 } from 'react-native';
-import logoIcon from '';
+import logoIcon from 'images/allfood.png';
 // import logoIcon from '../../assets/images/allfood.png';
 import locationIcon from '../../assets/images/location.png';
 import FastImage from 'react-native-fast-image';
