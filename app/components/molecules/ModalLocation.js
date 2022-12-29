@@ -43,7 +43,7 @@ export const ModalLocation = ({
           <Modal
             animationType="slide"
             transparent
-            visible={isModalVisible}
+            isVisible={isModalVisible}
             onBackdropPress={() => closeModal()}
             onDismiss={closeModal}>
             <View style={styles.modalView}>
