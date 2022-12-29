@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es5",
+    "sourceMap": true,
+    "baseUrl": ".",
+    "paths": {
+      "~": [
+        "./app/components/*"
+      ]
+    }
+  },
+  "exclude": [
+    "node_modules"
+  ]
+}
