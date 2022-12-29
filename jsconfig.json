@@ -2,11 +2,32 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "components/*": [
-        "./app/components/*"
-      ],
       "images/*": [
         "./app/assets/images/*"
+      ],
+      "lottie/*": [
+        "./app/assets/lottie/*"
+      ],
+      "atoms/*": [
+        "./app/components/atoms/*"
+      ],
+      "molecules/*": [
+        "./app/components/molecules/*"
+      ],
+      "config/*": [
+        "./app/config/*"
+      ],
+      "model/*": [
+        "./app/model/*"
+      ],
+      "navigation/*": [
+        "./app/navigation/*"
+      ],
+      "screens/*": [
+        "./app/screens/*"
+      ],
+      "store/*": [
+        "./app/store/*"
       ]
     }
   },

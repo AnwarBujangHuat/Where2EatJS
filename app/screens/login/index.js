@@ -2,7 +2,10 @@ import * as React from 'react';
 import { useState } from 'react';
 
 import { LoginComponents } from './components';
-import { useDispatch, useSelector } from 'react-redux';
+import {
+  useDispatch,
+  useSelector,
+} from 'react-redux';
 import { firebase } from '../../../src/firebase/config';
 import { Alert } from 'react-native';
 
@@ -10,10 +13,10 @@ import {
   fetchUserInformation,
   populateUserData,
   rememberMe,
-} from '../../store/thunks';
+} from 'store/thunks';
 import { GoogleSignin } from '../../../src/SignInOption/config';
-import { getInfo } from '../../store/selector';
-import { routes } from '../../navigation/routes';
+import { getInfo } from 'store/selector';
+import { routes } from 'navigation/routes';
 
 export const Login = ({ navigation }) => {
   const { EMAIL, PASSWORD } = useSelector(getInfo);
@@ -33,11 +36,11 @@ export const Login = ({ navigation }) => {
       },
     ]);
   };
-  const populateUser = async ({ uid, userInformation }) => {
+  const populateUser = async({ uid, userInformation }) => {
     dispatch(populateUserData({ uid, userInformation }));
     goToModal();
   };
-  const verifyUser = async () => {
+  const verifyUser = async() => {
     const { onSuccess: onSuccessAuthentication, data: userData } =
       await authenticateUser(Email, Password);
     if (!onSuccessAuthentication) {
@@ -69,17 +72,14 @@ export const Login = ({ navigation }) => {
   const goToModal = () => navigation.navigate(routes.MODAL);
   const authenticateUser = (email, password) =>
     new Promise((resolve, reject) => {
-      firebase
-        .auth()
-        .signInWithEmailAndPassword(email, password)
-        .then(
-          response => {
-            resolve({ onSuccess: true, data: response });
-          },
-          () => resolve({ onSuccess: false, data: 'No Record Found' }),
-        );
+      firebase.auth().signInWithEmailAndPassword(email, password).then(
+        response => {
+          resolve({ onSuccess: true, data: response });
+        },
+        () => resolve({ onSuccess: false, data: 'No Record Found' }),
+      );
     });
-  const onGoogleButtonPress = async () => {
+  const onGoogleButtonPress = async() => {
     await GoogleSignin.hasPlayServices({ showPlayServicesUpdateDialog: true });
     try {
       const { idToken, accessToken } = await GoogleSignin.signIn();
@@ -101,7 +101,8 @@ export const Login = ({ navigation }) => {
         IMAGE: picture,
       };
       await populateUser({ uid, userInformation: userInfo });
-    } catch (error) {}
+    }
+    catch (error) {}
   };
   const props = {
     onChangeInputEmail,
