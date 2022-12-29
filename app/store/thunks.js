@@ -116,7 +116,7 @@ const requestUpdateRestaurant = (id, field, value) =>
     restaurantCollectionRef.doc(id).update(field, value).then(
       () => myResolve({ onSuccess: true }),
       () => myResolve({ onSuccess: false }),
-    );
+    ).catch();
   });
 
 export const updateFoodItemFirebase = createAsyncThunk(
@@ -215,7 +215,7 @@ const requestRemoveFoodItem = (id, foodItem) =>
     restaurantCollectionRef.doc(id).update('food', arrayRemove(foodItem)).then(
       () => resolve({ onSuccess: true }),
       () => resolve({ onSuccess: false }),
-    );
+    ).catch();
   });
 
 const requestDeleteFoodItemImage = (id, foodItem, restaurantName) =>
@@ -227,7 +227,7 @@ const requestDeleteFoodItemImage = (id, foodItem, restaurantName) =>
     firebase.storage().ref().child(pathName + image).delete().then(
       () => resolve({ onSuccess: true }),
       () => resolve({ onSuccess: false }),
-    );
+    ).catch();
   });
 
 export const updateRestaurantInfoFirestore = createAsyncThunk(
@@ -278,7 +278,7 @@ const requestUpdateRestaurantInfo = (
     }).then(
       () => resolve({ onSuccess: true }),
       () => resolve({ onSuccess: false }),
-    );
+    ).catch();
   });
 
 export const fetchUserInformation = createAsyncThunk(
