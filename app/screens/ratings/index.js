@@ -1,11 +1,20 @@
-import React, { useEffect, useState } from 'react';
+import React, {
+  useEffect,
+  useState,
+} from 'react';
 import { RatingComponents } from './components';
-import { ConstString } from '../../configs/Strings';
-import { useDispatch, useSelector } from 'react-redux';
-import { getCurrentRestaurant, getUser } from '../../store/selector';
+import { ConstString } from 'configs/Strings';
+import {
+  useDispatch,
+  useSelector,
+} from 'react-redux';
+import {
+  getCurrentRestaurant,
+  getUser,
+} from 'store/selector';
 import { Alert } from 'react-native';
-import { updateRating } from '../../store/thunks';
-import { routes } from '../../navigation/routes';
+import { updateRating } from 'store/thunks';
+import { routes } from 'navigation/routes';
 
 export const Ratings = ({ navigation, route }) => {
   const ratingChipButton = ['All', '1', '2', '3', '4', '5'];
@@ -77,7 +86,7 @@ export const Ratings = ({ navigation, route }) => {
       );
     }
   };
-  const submit = async (text, newRate = 1) => {
+  const submit = async(text, newRate = 1) => {
     const currentDate = new Date().toLocaleString();
     const userReviewResult = {
       userId: ID,
@@ -91,7 +100,7 @@ export const Ratings = ({ navigation, route }) => {
       Math.round(
         ((restaurantsRating.reduce((r, c) => r + c.rating, 0) + newRate) /
           (restaurantsRating.length + 1)) *
-          10,
+        10,
       ) / 10;
     setCurrentRating(avg !== undefined ? avg : 2.5);
 

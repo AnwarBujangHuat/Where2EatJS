@@ -10,14 +10,14 @@ import {
 } from 'react-native';
 import { Rating } from 'react-native-ratings';
 import React from 'react';
-import { BackButton } from '../../components/atoms/BackButton';
-import { RatingCard } from '../../components/molecules/RatingCard';
-import addIcon from '../../assets/images/plus.png';
-import { ModalGiveRating } from '../../components/molecules/ModalGiveRating';
+import { BackButton } from 'components/atoms/BackButton';
+import { RatingCard } from 'components/molecules/RatingCard';
+import addIcon from 'images/plus.png';
+import { ModalGiveRating } from 'components/molecules/ModalGiveRating';
 import { BarChart } from 'react-native-chart-kit';
-import { RatingButton } from '../../components/atoms/RatingButton';
-import { colors } from '../../configs/Const';
-import { GStyles } from '../../configs/Styles';
+import { RatingButton } from 'components/atoms/RatingButton';
+import { colors } from 'configs/Const';
+import { GStyles } from 'configs/Styles';
 
 export const RatingComponents = props => {
   const {

@@ -1,4 +1,7 @@
-import { createEntityAdapter, createSlice } from '@reduxjs/toolkit';
+import {
+  createEntityAdapter,
+  createSlice,
+} from '@reduxjs/toolkit';
 import {
   addFoodItemFirebase,
   AddOne,
@@ -11,7 +14,7 @@ import {
   updateRating,
   updateRestaurantInfoFirestore,
 } from './thunks';
-import { ConstString } from '../configs/Strings';
+import { ConstString } from 'configs/Strings';
 
 export const restaurantAdapter = createEntityAdapter({
   sortComparer: (a, b) => a.restaurant.localeCompare(b.restaurant),

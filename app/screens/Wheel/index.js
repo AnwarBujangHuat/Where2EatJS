@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { WheelComponents } from './components';
-import { routes } from '../../navigation/routes';
+import { routes } from 'navigation/routes';
 
 const oneTurn = 360;
 export const WheelOfFortune = ({ navigation, route }) => {

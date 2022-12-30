@@ -1,12 +1,18 @@
 import React, { useState } from 'react';
-import { ConstString } from '../../configs/Strings';
+import { ConstString } from 'configs/Strings';
 import { RegisterComponents } from './components';
 import { launchImagePicker } from '../../ImagePicker';
-import { useDispatch, useSelector } from 'react-redux';
-import { getCurrentRestaurant, getUser } from '../../store/selector';
-import { Const } from '../../configs/Const';
+import {
+  useDispatch,
+  useSelector,
+} from 'react-redux';
+import {
+  getCurrentRestaurant,
+  getUser,
+} from 'store/selector';
+import { Const } from 'configs/Const';
 import { Alert } from 'react-native';
-import { updateRestaurantInfoFirestore } from '../../store/thunks';
+import { updateRestaurantInfoFirestore } from 'store/thunks';
 import { firebase } from '../../../src/firebase/config';
 
 let initialIndex = 0;
@@ -55,10 +61,10 @@ export const Register = ({ navigation, route }) => {
       ? alert('Please Fill in All Information')
       : navigation.navigate(ConstString.MENU, { item, id });
   };
-  const launchImageLibrary = async () => {
-    const response = await launchImagePicker();
+  const launchImageLibrary = async() => {
+    const { result } = await launchImagePicker();
     //* Exit if response empty *//
-    if (!response) {
+    if (!result) {
       return Alert.alert(
         'Please Pick Image in JPG or PNG format',
         '',
@@ -68,7 +74,7 @@ export const Register = ({ navigation, route }) => {
     }
 
     //* Exit if there's error *//
-    const { errorCode, assets } = response;
+    const { errorCode, assets } = result;
     if (errorCode || assets === []) {
       return Alert.alert(
         'Please Pick Image in JPG or PNG format',
@@ -85,31 +91,31 @@ export const Register = ({ navigation, route }) => {
   const showAlert = result => {
     result === ConstString.SUCCESS
       ? Alert.alert(
-          'Congratulation',
-          'Restaurant Information is Successfully Updated',
-          [
-            {
-              onPress: () => navigation.goBack({ id }),
-              text: 'Okay',
-            },
-          ],
-        )
+        'Congratulation',
+        'Restaurant Information is Successfully Updated',
+        [
+          {
+            onPress: () => navigation.goBack({ id }),
+            text: 'Okay',
+          },
+        ],
+      )
       : //Error Handling Alert
-        Alert.alert(
-          'Sorry',
-          'We did not manage to update Restaurant Information',
-          [
-            {
-              onPress: () => navigation.goBack({ id }),
-              text: 'Okay',
-            },
-          ],
-        );
+      Alert.alert(
+        'Sorry',
+        'We did not manage to update Restaurant Information',
+        [
+          {
+            onPress: () => navigation.goBack({ id }),
+            text: 'Okay',
+          },
+        ],
+      );
   };
   const goBack = () => {
     navigation.goBack({ id });
   };
-  const updateRestaurantInfo = async () => {
+  const updateRestaurantInfo = async() => {
     let image = restaurantInfo?.image;
     //Upload Image if image change
     if (!reUpload) {
@@ -137,7 +143,7 @@ export const Register = ({ navigation, route }) => {
   const setName = text => setRestaurantName(text);
   const setDescription = text => setRestaurantDesc(text);
   const categorySelected = ({ item }) => setSelectedTypes(item.title);
-  const uploadAsFile = async (uri, folder, progressCallback) => {
+  const uploadAsFile = async(uri, folder, progressCallback) => {
     if (uri !== undefined) {
       const response = await fetch(uri);
       const blob = await response.blob();
@@ -153,7 +159,7 @@ export const Register = ({ navigation, route }) => {
           'state_changed',
           snapshot => {
             progressCallback &&
-              progressCallback(snapshot.bytesTransferred / snapshot.totalBytes);
+            progressCallback(snapshot.bytesTransferred / snapshot.totalBytes);
           },
           error => {
             reject(error);

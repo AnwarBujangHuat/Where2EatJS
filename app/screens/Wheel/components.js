@@ -9,16 +9,23 @@ import {
   Text as RNText,
   View,
 } from 'react-native';
-import Svg, { G, Path, Text } from 'react-native-svg';
-import { BackButton } from '../../components/atoms/BackButton';
-import { ItemListRestaurant } from '../../components/molecules/ItemListRestaurant';
-import { ModalWinner } from '../../components/molecules/ModalWinner';
+import Svg, {
+  G,
+  Path,
+  Text,
+} from 'react-native-svg';
+import { BackButton } from 'components/atoms/BackButton';
+import { ItemListRestaurant } from 'components/molecules/ItemListRestaurant';
+import { ModalWinner } from 'components/molecules/ModalWinner';
 import * as d3Shape from 'd3-shape';
 import { colorPalette } from './ColorPalette';
-import { PanGestureHandler, State } from 'react-native-gesture-handler';
+import {
+  PanGestureHandler,
+  State,
+} from 'react-native-gesture-handler';
 import color from 'randomcolor';
 import { snap } from '@popmotion/popcorn';
-import { colors } from '../../configs/Const';
+import { colors } from 'configs/Const';
 
 const { width } = Dimensions.get('screen');
 const knobFill = color({ hue: 'purple' });
@@ -63,11 +70,7 @@ export const WheelComponents = props => {
       }
     }
     return arcs.map((arc, index) => {
-      const instance = d3Shape
-        .arc()
-        .padAngle(0.01)
-        .outerRadius(width / 2)
-        .innerRadius(20);
+      const instance = d3Shape.arc().padAngle(0.01).outerRadius(width / 2).innerRadius(20);
       return {
         path: instance(arc),
         color: colorPalettes[index],

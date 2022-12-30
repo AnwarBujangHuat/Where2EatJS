@@ -1,18 +1,24 @@
-import React, { useEffect, useState } from 'react';
+import React, {
+  useEffect,
+  useState,
+} from 'react';
 import { Alert } from 'react-native';
-import { ConstString } from '../../../configs/Strings';
-import { useDispatch, useSelector } from 'react-redux';
+import { ConstString } from 'configs/Strings';
+import {
+  useDispatch,
+  useSelector,
+} from 'react-redux';
 import {
   addFoodItemFirebase,
   AddOne,
   removeFoodItemFirebase,
   updateFoodItemFirebase,
-} from '../../../store/thunks';
-import { icons } from '../../../configs/Const';
+} from 'store/thunks';
+import { icons } from 'configs/Const';
 import { firebase } from '../../../../src/firebase/config';
-import { getCurrentRestaurant } from '../../../store/selector';
+import { getCurrentRestaurant } from 'store/selector';
 import { SetupMenuComponents } from './components';
-import { routes } from '../../../navigation/routes';
+import { routes } from 'navigation/routes';
 import { v4 as uuid } from 'uuid';
 
 export const SetupMenu = ({ navigation, route }) => {
@@ -56,18 +62,18 @@ export const SetupMenu = ({ navigation, route }) => {
   const showAlert = (action, foodItem, result) => {
     result === ConstString.SUCCESS
       ? Alert.alert('Congratulation', foodItem + ' is Successfully ' + action, [
-          {
-            onPress: () => closeModal(),
-            text: 'Okay',
-          },
-        ])
+        {
+          onPress: () => closeModal(),
+          text: 'Okay',
+        },
+      ])
       : //Error Handling Alert
-        Alert.alert('Sorry', foodItem + ' cannot be ' + action, [
-          {
-            onPress: () => closeModal(),
-            text: 'Okay',
-          },
-        ]);
+      Alert.alert('Sorry', foodItem + ' cannot be ' + action, [
+        {
+          onPress: () => closeModal(),
+          text: 'Okay',
+        },
+      ]);
   };
   const onBackButton = () => {
     if (selectedCategory.length > 0 && !editorMode) {
@@ -92,7 +98,7 @@ export const SetupMenu = ({ navigation, route }) => {
   const closeMenuDetails = () => setIsModalMenuVisible(false);
 
   //Upload new Restaurant to Firebase
-  const uploadMenu = async () => {
+  const uploadMenu = async() => {
     setActionModal(true);
     action = ConstString.UPLOADING;
     const resultUploadImageProfile = await uploadAsFile(item.image, 'profile');
@@ -121,7 +127,7 @@ export const SetupMenu = ({ navigation, route }) => {
     }
     await uploadFinish();
   };
-  const uploadFinish = async () => {
+  const uploadFinish = async() => {
     item.food = Menu;
     const addRestaurantResult = await dispatch(AddOne(item));
     const { result } = addRestaurantResult;
@@ -132,7 +138,7 @@ export const SetupMenu = ({ navigation, route }) => {
     navigation.navigate(routes.HOME);
   };
   //Upload Image to Firebase
-  const uploadAsFile = async (
+  const uploadAsFile = async(
     uri,
     folder,
     category,
@@ -165,7 +171,7 @@ export const SetupMenu = ({ navigation, route }) => {
           'state_changed',
           snapshot => {
             progressCallback &&
-              progressCallback(snapshot.bytesTransferred / snapshot.totalBytes);
+            progressCallback(snapshot.bytesTransferred / snapshot.totalBytes);
           },
           error => {
             reject(error);
@@ -225,7 +231,7 @@ export const SetupMenu = ({ navigation, route }) => {
     setCategory('');
     setModalVisible(true);
   };
-  const updateFoodItem = async (action, foodItem, reUpload) => {
+  const updateFoodItem = async(action, foodItem, reUpload) => {
     const initialFoodItem = selectedFoodItem ?? {};
     const index = foodItemLists.indexOf(initialFoodItem);
     //New restaurant update temp Menu
@@ -306,7 +312,7 @@ export const SetupMenu = ({ navigation, route }) => {
       { cancelable: true },
     );
   };
-  const removeFoodItem = async (id, foodItem) => {
+  const removeFoodItem = async(id, foodItem) => {
     const index = foodItemLists.indexOf(foodItem);
     if (!editorMode) {
       const menuIndex = Menu.indexOf(selectedFoodItem);

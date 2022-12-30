@@ -182,7 +182,7 @@ function SelectBox ({
   function multiListEmptyComponent () {
     const kMultiListEmptyLabelStyle = {
       fontSize: 17,
-      color: 'rgba(60, 60, 67, 0.3)',
+      color: colors.white,
       ...multiListEmptyLabelStyle,
     };
     return (
