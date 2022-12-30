@@ -263,7 +263,7 @@ const styles = StyleSheet.create({
     color: colors.white,
   },
   button: {
-    backgroundColor: colors.lightPurple,
+    backgroundColor: colors.primary,
     alignItems: 'center',
     padding: 15,
     borderRadius: 10,

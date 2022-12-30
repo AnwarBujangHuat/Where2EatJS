@@ -17,7 +17,7 @@
       "components/*": [
         "./app/components/*"
       ],
-      "config/*": [
+      "configs/*": [
         "./app/configs/*"
       ],
       "model/*": [
