@@ -6,7 +6,7 @@ import {
   View,
 } from 'react-native';
 import FastImage from 'react-native-fast-image';
-import defaultAvatar from '../../assets/images/programmer.png';
+import defaultAvatar from 'images/programmer.png';
 import { RateLabel } from 'components/atoms/RateLabel';
 import { GStyles } from 'configs/Styles';
 import { colors } from 'configs/Const';

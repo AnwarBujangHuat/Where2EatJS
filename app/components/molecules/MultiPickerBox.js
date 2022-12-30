@@ -11,12 +11,12 @@ import {
   TouchableOpacity,
   View,
 } from 'react-native';
-import Icon from '../atoms/Icon';
+import Icon from 'components/atoms/Icon';
 import {
   find,
   isEmpty,
 } from 'lodash';
-import Toggle from '../atoms/Toggle';
+import Toggle from 'components/atoms/Toggle';
 import { colors } from 'configs/Const';
 import { v4 as uuid } from 'uuid';
 

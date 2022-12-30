@@ -182,7 +182,6 @@ const styles = StyleSheet.create({
     borderRadius: 7,
   },
   header: {
-    ...GStyles.shadowContainer,
     fontSize: 18,
     paddingVertical: 20,
     fontWeight: 'bold',

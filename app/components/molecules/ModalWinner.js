@@ -9,15 +9,15 @@ import {
   View,
 } from 'react-native';
 import logoIcon from 'images/allfood.png';
-// import logoIcon from '../../assets/images/allfood.png';
-import locationIcon from '../../assets/images/location.png';
+
+import locationIcon from 'images/location.png';
 import FastImage from 'react-native-fast-image';
 import {
   colors,
   icons,
-} from '../../configs/Const';
+} from 'configs/Const';
 import Modal from 'react-native-modal';
-import { GStyles } from '../../configs/Styles';
+import { GStyles } from 'configs/Styles';
 
 const { width } = Dimensions.get('window');
 export const ModalWinner = ({

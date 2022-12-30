@@ -52,16 +52,18 @@ const requestFetchRestaurantList = () =>
 export const AddOne = createAsyncThunk(
   'AddOneRestaurant',
   async(request, { dispatch, rejectWithValue }) => {
-    try {
-      const response = await firebase.firestore().collection('Restaurants');
-      const result = await response.add(request);
-      return { id: result.id, data: request };
-    }
-    catch (e) {
-      return rejectWithValue(e);
-    }
+    const { onSuccess, id, data } = await addOne(request);
+    if (!onSuccess) return rejectWithValue(data);
+    return { id: id, data: request, onSuccess: true };
+
   },
 );
+const addOne = (request) =>
+  new Promise((resolve, reject) => {
+    restaurantCollectionRef.add(request).then(
+      (r) => resolve({ onSuccess: true, id: r.id, data: request }),
+    ).catch((e) => reject({ onSuccess: false, data: e }));
+  });
 export const changeTheme = createAsyncThunk(
   'ChangeAppTheme',
   async(request, { dispatch, rejectWithValue }) => {

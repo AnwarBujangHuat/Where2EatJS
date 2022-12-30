@@ -8,7 +8,7 @@ import {
   View,
 } from 'react-native';
 import { RateLabel } from 'components/atoms/RateLabel';
-import locationIcon from '../../assets/images/location.png';
+import locationIcon from 'images/location.png';
 import {
   colors,
   icons,

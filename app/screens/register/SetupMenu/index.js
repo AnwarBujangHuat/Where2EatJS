@@ -129,9 +129,8 @@ export const SetupMenu = ({ navigation, route }) => {
   };
   const uploadFinish = async() => {
     item.food = Menu;
-    const addRestaurantResult = await dispatch(AddOne(item));
-    const { result } = addRestaurantResult;
-    if (result) {
+    const { payload } = await dispatch(AddOne(item));
+    if (!payload.onSuccess) {
       return showAlert(ConstString.ADD, item.restaurant, ConstString.FAILED);
     }
     setActionModal(false);

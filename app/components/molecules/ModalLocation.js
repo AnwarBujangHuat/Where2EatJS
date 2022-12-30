@@ -10,8 +10,8 @@ import {
 import Modal from 'react-native-modal';
 import GooglePlacesInput from './GooglePlacesInput';
 import MapView, { Marker } from 'react-native-maps';
-import { colors } from '../../configs/Const';
-import { GStyles } from '../../configs/Styles';
+import { colors } from 'configs/Const';
+import { GStyles } from 'configs/Styles';
 
 const { width } = Dimensions.get('window');
 

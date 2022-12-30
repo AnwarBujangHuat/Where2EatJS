@@ -14,6 +14,7 @@ import { colors } from 'configs/Const';
 const { width } = Dimensions.get('window');
 
 export const ModalMenuButton = ({ isModalVisible, onPress, closeModal }) => {
+  //TODO: Menu Map in screens
   const MENU_OPTIONS = [
     {
       id: 1,
@@ -34,13 +35,13 @@ export const ModalMenuButton = ({ isModalVisible, onPress, closeModal }) => {
         <SafeAreaView>
           <Modal
             isVisible={isModalVisible}
-            onBackdropPress={() => closeModal()}>
+            onBackdropPress={closeModal}>
             <View style={styles.modalView}>
               <FlatList
                 data={MENU_OPTIONS}
                 renderItem={({ item }) => {
                   return (
-                    <TouchableOpacity onPress={() => onPress(item.id)}>
+                    <TouchableOpacity onPress={() => item.onPress(item.id)}>
                       <Text style={styles.buttonText}>{item.title}</Text>
                     </TouchableOpacity>
                   );
