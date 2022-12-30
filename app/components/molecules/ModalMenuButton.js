@@ -14,7 +14,6 @@ import { colors } from 'configs/Const';
 const { width } = Dimensions.get('window');
 
 export const ModalMenuButton = ({ isModalVisible, onPress, closeModal }) => {
-  //TODO: Menu Map in screens
   const MENU_OPTIONS = [
     {
       id: 1,
