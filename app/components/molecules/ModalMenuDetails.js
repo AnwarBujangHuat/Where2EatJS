@@ -10,8 +10,8 @@ import {
 import FastImage from 'react-native-fast-image';
 import Modal from 'react-native-modal';
 import nasiAyam from '../../assets/images/NasiAyam.jpg';
-import { colors } from '../../configs/Const';
-import { GStyles } from '../../configs/Styles';
+import { colors } from 'configs/Const';
+import { GStyles } from 'configs/Styles';
 
 const { width } = Dimensions.get('window');
 

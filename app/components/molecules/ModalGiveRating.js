@@ -12,8 +12,8 @@ import { AirbnbRating } from 'react-native-ratings';
 import Cat from '../../assets/lottie/purplecat.json';
 import LottieView from 'lottie-react-native';
 import Modal from 'react-native-modal';
-import { colors } from '../../configs/Const';
-import { GStyles } from '../../configs/Styles';
+import { colors } from 'configs/Const';
+import { GStyles } from 'configs/Styles';
 
 const { width } = Dimensions.get('window');
 

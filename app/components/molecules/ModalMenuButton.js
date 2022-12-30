@@ -9,7 +9,7 @@ import {
   View,
 } from 'react-native';
 import Modal from 'react-native-modal';
-import { colors } from '../../configs/Const';
+import { colors } from 'configs/Const';
 
 const { width } = Dimensions.get('window');
 

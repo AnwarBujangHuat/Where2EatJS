@@ -8,8 +8,8 @@ import {
   TouchableOpacity,
   View,
 } from 'react-native';
-import { colors } from '../../configs/Const';
-import { GStyles } from '../../configs/Styles';
+import { colors } from 'configs/Const';
+import { GStyles } from 'configs/Styles';
 import Modal from 'react-native-modal';
 
 const { width } = Dimensions.get('window');

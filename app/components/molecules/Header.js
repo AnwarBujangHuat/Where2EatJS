@@ -7,8 +7,8 @@ import {
   View,
 } from 'react-native';
 import React from 'react';
-import { ConstString } from '../../configs/Strings';
-import { colors } from '../../configs/Const';
+import { ConstString } from 'configs/Strings';
+import { colors } from 'configs/Const';
 import TestIDs from '../../../e2e/TestIDs';
 
 const { width } = Dimensions.get('window');

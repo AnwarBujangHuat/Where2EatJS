@@ -10,8 +10,8 @@ import {
 import {
   colors,
   icons,
-} from '../../configs/Const';
-import { GStyles } from '../../configs/Styles';
+} from 'configs/Const';
+import { GStyles } from 'configs/Styles';
 
 export const ItemListRestaurant = ({ onPress, name, category, index }) => {
   return (

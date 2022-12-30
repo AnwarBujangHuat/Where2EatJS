@@ -1,4 +1,8 @@
-import React, { memo, useMemo, useState } from 'react';
+import React, {
+  memo,
+  useMemo,
+  useState,
+} from 'react';
 import {
   FlatList,
   ScrollView,
@@ -8,9 +12,12 @@ import {
   View,
 } from 'react-native';
 import Icon from '../atoms/Icon';
-import { find, isEmpty } from 'lodash';
+import {
+  find,
+  isEmpty,
+} from 'lodash';
 import Toggle from '../atoms/Toggle';
-import { colors } from '../../configs/Const';
+import { colors } from 'configs/Const';
 import { v4 as uuid } from 'uuid';
 
 const hitSlop = { top: 14, bottom: 14, left: 14, right: 14 };
@@ -24,7 +31,7 @@ const kOptionListViewStyle = {
 };
 const renderItemStyle = { flexShrink: 1 };
 
-function SelectBox({
+function SelectBox ({
   labelStyle,
   containerStyle,
   inputFilterContainerStyle,
@@ -43,7 +50,7 @@ function SelectBox({
 
   const [showOptions, setShowOptions] = useState(false);
 
-  function renderLabel(item) {
+  function renderLabel (item) {
     const kOptionsLabelStyle = {
       fontSize: 17,
       color: 'rgba(60, 60, 67, 0.6)',
@@ -52,7 +59,7 @@ function SelectBox({
     return <Text style={kOptionsLabelStyle}>{item}</Text>;
   }
 
-  function renderItem({ item }) {
+  function renderItem ({ item }) {
     const { isMulti, onChange, onMultiSelect, selectedValues } = props;
     const kOptionContainerStyle = {
       borderColor: '#dadada',
@@ -96,11 +103,11 @@ function SelectBox({
       </View>
     );
 
-    function onPressMultiItem() {
+    function onPressMultiItem () {
       return e => (onMultiSelect ? onMultiSelect(item) : null);
     }
 
-    function onPressItem() {
+    function onPressItem () {
       return e => {
         setShowOptions(false);
         return onChange ? onChange(item) : null;
@@ -108,7 +115,7 @@ function SelectBox({
     }
   }
 
-  function renderGroupItem({ item }) {
+  function renderGroupItem ({ item }) {
     const { onTapClose, options } = props;
     const label = find(options, o => o.id === item.id);
     const kMultiOptionContainerStyle = {
@@ -141,7 +148,7 @@ function SelectBox({
       </View>
     );
 
-    function onPressItem() {
+    function onPressItem () {
       return e => (onTapClose ? onTapClose(item) : null);
     }
   }
@@ -172,7 +179,7 @@ function SelectBox({
     [inputValue, options],
   );
 
-  function multiListEmptyComponent() {
+  function multiListEmptyComponent () {
     const kMultiListEmptyLabelStyle = {
       fontSize: 17,
       color: 'rgba(60, 60, 67, 0.3)',
@@ -189,7 +196,7 @@ function SelectBox({
     );
   }
 
-  function optionListEmpty() {
+  function optionListEmpty () {
     const kListEmptyLabelStyle = {
       fontSize: 17,
       color: 'rgba(60, 60, 67, 0.6)',
@@ -282,11 +289,11 @@ function SelectBox({
     </>
   );
 
-  function keyExtractor() {
+  function keyExtractor () {
     return item => `${item.id}-${uuid()}`;
   }
 
-  function kSelectedItemStyle() {
+  function kSelectedItemStyle () {
     return {
       fontSize: 17,
       color: isEmpty(value.item) ? 'rgba(60, 60, 67, 0.3)' : colors.white,
@@ -294,7 +301,7 @@ function SelectBox({
     };
   }
 
-  function HeaderComponent() {
+  function HeaderComponent () {
     const kInputFilterContainerStyle = {
       width: '100%',
       borderBottomWidth: 1,
@@ -332,12 +339,12 @@ function SelectBox({
       </>
     );
 
-    function onChangeText() {
+    function onChangeText () {
       return value => setInputValue(value);
     }
   }
 
-  function onPressShowOptions() {
+  function onPressShowOptions () {
     return () => setShowOptions(!showOptions);
   }
 }
