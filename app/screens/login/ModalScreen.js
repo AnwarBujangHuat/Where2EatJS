@@ -6,13 +6,13 @@ import {
   SafeAreaView,
   StyleSheet,
 } from 'react-native';
-import { PopulateRestaurantList } from '../../store/thunks';
+import { PopulateRestaurantList } from 'store/thunks';
 import { useDispatch } from 'react-redux';
 import LottieView from 'lottie-react-native';
 import Welcome from '../../assets/lottie/welcome.json';
 import TestIDs from '../../../e2e/TestIDs';
-import { routes } from '../../navigation/routes';
-import { colors } from '../../configs/Const';
+import { routes } from 'navigation/routes';
+import { colors } from 'configs/Const';
 
 const { width } = Dimensions.get('window');
 
