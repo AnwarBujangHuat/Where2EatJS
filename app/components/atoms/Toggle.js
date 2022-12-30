@@ -1,5 +1,5 @@
 import React, { memo } from 'react';
-import { colors } from '../../configs/Const';
+import { colors } from 'configs/Const';
 import { TouchableOpacity } from 'react-native';
 import Icon from './Icon';
 

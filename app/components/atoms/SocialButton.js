@@ -9,8 +9,8 @@ import React from 'react';
 import {
   colors,
   icons,
-} from '../../configs/Const';
-import { GStyles } from '../../configs/Styles';
+} from 'configs/Const';
+import { GStyles } from 'configs/Styles';
 
 export const SocialButton = ({ tesId, onPress, icon }) => {
   return (

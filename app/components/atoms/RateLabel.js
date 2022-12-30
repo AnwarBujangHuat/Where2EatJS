@@ -6,9 +6,9 @@ import {
   View,
 } from 'react-native';
 import React from 'react';
-import startIcon from '../../assets/images/star.png';
-import startIcon2 from '../../assets/images/star2.png';
-import { colors } from '../../configs/Const';
+import startIcon from 'images/star.png';
+import startIcon2 from 'images/star2.png';
+import { colors } from 'configs/Const';
 
 export const RateLabel = ({ rating, goToRating }) => {
   const restaurantRate = rating?.toFixed(1);

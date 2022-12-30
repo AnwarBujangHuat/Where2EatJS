@@ -4,12 +4,12 @@ import {
 } from 'react-native';
 import React from 'react';
 import { FloatingAction } from 'react-native-floating-action';
-import Menu from '../../assets/images/cheeseburger.png';
-import Details from '../../assets/images/details.png';
-import Edit from '../../assets/images/edit.png';
-import { ConstString } from '../../configs/Strings';
-import { colors } from '../../configs/Const';
-import { GStyles } from '../../configs/Styles';
+import Menu from 'images/cheeseburger.png';
+import Details from 'images/details.png';
+import Edit from 'images/edit.png';
+import { ConstString } from 'configs/Strings';
+import { colors } from 'configs/Const';
+import { GStyles } from 'configs/Styles';
 
 const actions = [
   {

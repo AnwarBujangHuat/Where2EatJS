@@ -6,8 +6,8 @@ import {
   View,
 } from 'react-native';
 import React from 'react';
-import editIcon from '../../assets/images/editing.png';
-import { colors } from '../../configs/Const';
+import editIcon from 'images/editing.png';
+import { colors } from 'configs/Const';
 
 export const EditableLabel = ({ onPress, title, information, icon }) => {
   return (

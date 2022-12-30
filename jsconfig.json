@@ -15,7 +15,7 @@
         "./app/components/molecules/*"
       ],
       "config/*": [
-        "./app/config/*"
+        "./app/configs/*"
       ],
       "model/*": [
         "./app/model/*"

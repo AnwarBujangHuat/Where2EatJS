@@ -1,7 +1,10 @@
 import React from 'react';
 
-import { StyleSheet, TextInput } from 'react-native';
-import { colors } from '../../configs/Const';
+import {
+  StyleSheet,
+  TextInput,
+} from 'react-native';
+import { colors } from 'configs/Const';
 
 export const InputField = ({ placeholder, multiline, onChange, value }) => {
   return (
