@@ -7,12 +7,12 @@ import {
   Text,
   View,
 } from 'react-native';
-import { DetailsHeader } from 'components/molecules/DetailsHeader';
-import { DescriptionLabel } from 'components/molecules/DescriptionLabel';
-import { FoodCard } from 'components/molecules/FoodCard';
-import { ModalMenuDetails } from 'components/molecules/ModalMenuDetails';
-import { ModalWinner } from 'components/molecules/ModalWinner';
-import { ExpandableFloatingButton } from 'components/atoms/ExpandableFloatingButton';
+import { DetailsHeader } from 'molecules/DetailsHeader';
+import { DescriptionLabel } from 'molecules/DescriptionLabel';
+import { FoodCard } from 'molecules/FoodCard';
+import { ModalMenuDetails } from 'molecules/ModalMenuDetails';
+import { ModalWinner } from 'molecules/ModalWinner';
+import { ExpandableFloatingButton } from 'atoms/ExpandableFloatingButton';
 import { colors } from 'configs/Const';
 
 export const RestaurantComponents = props => {

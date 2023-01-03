@@ -14,9 +14,9 @@ import Svg, {
   Path,
   Text,
 } from 'react-native-svg';
-import { BackButton } from 'components/atoms/BackButton';
-import { ItemListRestaurant } from 'components/molecules/ItemListRestaurant';
-import { ModalWinner } from 'components/molecules/ModalWinner';
+import { BackButton } from 'atoms/BackButton';
+import { ItemListRestaurant } from 'molecules/ItemListRestaurant';
+import { ModalWinner } from 'molecules/ModalWinner';
 import * as d3Shape from 'd3-shape';
 import { colorPalette } from './ColorPalette';
 import {

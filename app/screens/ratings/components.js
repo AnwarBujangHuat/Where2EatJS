@@ -10,12 +10,12 @@ import {
 } from 'react-native';
 import { Rating } from 'react-native-ratings';
 import React from 'react';
-import { BackButton } from 'components/atoms/BackButton';
-import { RatingCard } from 'components/molecules/RatingCard';
+import { BackButton } from 'atoms/BackButton';
+import { RatingCard } from 'molecules/RatingCard';
 import addIcon from 'images/plus.png';
-import { ModalGiveRating } from 'components/molecules/ModalGiveRating';
+import { ModalGiveRating } from 'molecules/ModalGiveRating';
 import { BarChart } from 'react-native-chart-kit';
-import { RatingButton } from 'components/atoms/RatingButton';
+import { RatingButton } from 'atoms/RatingButton';
 import { colors } from 'configs/Const';
 import { GStyles } from 'configs/Styles';
 

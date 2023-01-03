@@ -9,11 +9,11 @@ import {
 } from 'react-native';
 import CheckBox from '@react-native-community/checkbox';
 import Logo from 'images/allfood.png';
-import { InputFieldLogins } from 'components/molecules/InputFieldLogins';
+import { InputFieldLogins } from 'molecules/InputFieldLogins';
 import email from 'images/email.png';
 import password from 'images/password.png';
-import { IconButton } from 'components/molecules/IconButton';
-import { SocialButton } from 'components/atoms/SocialButton';
+import { IconButton } from 'molecules/IconButton';
+import { SocialButton } from 'atoms/SocialButton';
 import { ConstString } from 'configs/Strings';
 import TestIDs from '../../../e2e/TestIDs';
 import { colors } from 'configs/Const';

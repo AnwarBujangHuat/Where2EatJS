@@ -7,7 +7,7 @@ import {
   TouchableWithoutFeedback,
   View,
 } from 'react-native';
-import { RateLabel } from 'components/atoms/RateLabel';
+import { RateLabel } from 'atoms/RateLabel';
 import locationIcon from 'images/location.png';
 import {
   colors,

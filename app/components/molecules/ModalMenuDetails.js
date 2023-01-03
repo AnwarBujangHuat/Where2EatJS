@@ -9,7 +9,7 @@ import {
 } from 'react-native';
 import FastImage from 'react-native-fast-image';
 import Modal from 'react-native-modal';
-import nasiAyam from '../../assets/images/NasiAyam.jpg';
+import nasiAyam from 'images/NasiAyam.jpg';
 import { colors } from 'configs/Const';
 import { GStyles } from 'configs/Styles';
 

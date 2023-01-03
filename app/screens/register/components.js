@@ -10,14 +10,14 @@ import {
   TouchableOpacity,
   View,
 } from 'react-native';
-import { DetailsHeader } from 'components/molecules/DetailsHeader';
+import { DetailsHeader } from 'molecules/DetailsHeader';
 import {
   colors,
   Const,
 } from 'configs/Const';
-import { ImageButton } from 'components/atoms/ImageButton';
-import { InputField } from 'components/atoms/InputField';
-import { ModalLocation } from 'components/molecules/ModalLocation';
+import { ImageButton } from 'atoms/ImageButton';
+import { InputField } from 'atoms/InputField';
+import { ModalLocation } from 'molecules/ModalLocation';
 
 export const RegisterComponents = props => {
   const {

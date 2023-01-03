@@ -14,9 +14,6 @@
       "molecules/*": [
         "./app/components/molecules/*"
       ],
-      "components/*": [
-        "./app/components/*"
-      ],
       "configs/*": [
         "./app/configs/*"
       ],

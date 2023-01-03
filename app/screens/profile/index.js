@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { ProfileComponents } from './components';
 import { getUser } from 'store/selector';
-import profileIcon from '../../assets/images/profile.png';
-import phoneIcon from '../../assets/images/telephone.png';
-import emailIcon from '../../assets/images/email.png';
+import profileIcon from 'images/profile.png';
+import phoneIcon from 'images/telephone.png';
+import emailIcon from 'images/email.png';
 
 import { useSelector } from 'react-redux';
 import { routes } from 'navigation/routes';

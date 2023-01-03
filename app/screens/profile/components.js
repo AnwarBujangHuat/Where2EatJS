@@ -8,10 +8,10 @@ import {
   TouchableOpacity,
   View,
 } from 'react-native';
-import { BackButton } from 'components/atoms/BackButton';
+import { BackButton } from 'atoms/BackButton';
 import personIcon from 'images/programmer.png';
-import { EditableLabel } from 'components/atoms/EditableLabel';
-import { ModalEdit } from 'components/molecules/ModalEdit';
+import { EditableLabel } from 'atoms/EditableLabel';
+import { ModalEdit } from 'molecules/ModalEdit';
 import { colors } from 'configs/Const';
 
 export const ProfileComponents = props => {

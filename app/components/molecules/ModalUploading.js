@@ -10,8 +10,8 @@ import {
 import LottieView from 'lottie-react-native';
 import Modal from 'react-native-modal';
 
-import Uploading from '../../assets/lottie/uploading.json';
-import Sleepy from '../../assets/lottie/sleepycat.json';
+import Uploading from 'lottie/uploading.json';
+import Sleepy from 'lottie/sleepycat.json';
 import { ConstString } from 'configs/Strings';
 import { colors } from 'configs/Const';
 import { GStyles } from 'configs/Styles';
