@@ -10,7 +10,7 @@ import {
   colors,
   icons,
 } from 'configs/Const';
-import { GStyles } from 'configs/Styles';
+import { GStyles } from 'configs/styles';
 
 export const SocialButton = ({ tesId, onPress, icon }) => {
   return (

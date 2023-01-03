@@ -8,7 +8,7 @@ import {
 import React from 'react';
 import searchIcon from 'images/search.png';
 import { colors } from 'configs/Const';
-import { GStyles } from 'configs/Styles';
+import { GStyles } from 'configs/styles';
 
 const { width } = Dimensions.get('window');
 

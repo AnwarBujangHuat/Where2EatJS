@@ -9,7 +9,7 @@ import {
   View,
 } from 'react-native';
 import { colors } from 'configs/Const';
-import { GStyles } from 'configs/Styles';
+import { GStyles } from 'configs/styles';
 import Modal from 'react-native-modal';
 
 const { width } = Dimensions.get('window');

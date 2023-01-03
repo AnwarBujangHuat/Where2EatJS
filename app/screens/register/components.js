@@ -18,7 +18,7 @@ import {
 import { ImageButton } from 'atoms/ImageButton';
 import { InputField } from 'atoms/InputField';
 import { ModalLocation } from 'molecules/ModalLocation';
-import { GStyles } from 'configs/Styles';
+import { GStyles } from 'configs/styles';
 
 export const RegisterComponents = props => {
   const {

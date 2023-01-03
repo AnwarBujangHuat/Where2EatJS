@@ -7,7 +7,7 @@ import {
 } from 'react-native';
 import React from 'react';
 import { colors } from 'configs/Const';
-import { GStyles } from 'configs/Styles';
+import { GStyles } from 'configs/styles';
 import TestIDs from '../../../e2e/TestIDs';
 
 export const ImageButton = ({ onPress, item, selected }) => {

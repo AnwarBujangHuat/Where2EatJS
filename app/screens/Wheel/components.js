@@ -28,7 +28,7 @@ import { snap } from '@popmotion/popcorn';
 import { colors } from 'configs/Const';
 import LottieView from 'lottie-react-native';
 import arrow from 'lottie/arrows.json';
-import { GStyles } from 'configs/Styles';
+import { GStyles } from 'configs/styles';
 
 const { width } = Dimensions.get('screen');
 const knobFill = color({ hue: 'purple' });

@@ -13,7 +13,7 @@ import personIcon from 'images/programmer.png';
 import { EditableLabel } from 'atoms/EditableLabel';
 import { ModalEdit } from 'molecules/ModalEdit';
 import { colors } from 'configs/Const';
-import { GStyles } from 'configs/Styles';
+import { GStyles } from 'configs/styles';
 
 export const ProfileComponents = props => {
   const {

@@ -18,7 +18,7 @@ import { RestaurantCard } from 'molecules/RestaurantCard';
 import { FloatingActionButton } from 'atoms/FloatingActionButtom';
 import { ModalMenuButton } from 'molecules/ModalMenuButton';
 import TestIds from '../../../e2e/TestIDs';
-import { GStyles } from 'configs/Styles';
+import { GStyles } from 'configs/styles';
 
 export const HomeComponents = props => {
   const {

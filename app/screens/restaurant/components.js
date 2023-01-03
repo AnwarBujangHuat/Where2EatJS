@@ -14,7 +14,7 @@ import { ModalMenuDetails } from 'molecules/ModalMenuDetails';
 import { ModalWinner } from 'molecules/ModalWinner';
 import { ExpandableFloatingButton } from 'atoms/ExpandableFloatingButton';
 import { colors } from 'configs/Const';
-import { GStyles } from 'configs/Styles';
+import { GStyles } from 'configs/styles';
 
 export const RestaurantComponents = props => {
   const {

@@ -17,7 +17,7 @@ import { SocialButton } from 'atoms/SocialButton';
 import { ConstString } from 'configs/Strings';
 import TestIDs from '../../../e2e/TestIDs';
 import { colors } from 'configs/Const';
-import { GStyles } from 'configs/Styles';
+import { GStyles } from 'configs/styles';
 
 export const LoginComponents = props => {
   const {
