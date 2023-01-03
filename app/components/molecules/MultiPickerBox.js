@@ -11,12 +11,12 @@ import {
   TouchableOpacity,
   View,
 } from 'react-native';
-import Icon from 'components/atoms/Icon';
+import Icon from 'atoms/Icon';
 import {
   find,
   isEmpty,
 } from 'lodash';
-import Toggle from 'components/atoms/Toggle';
+import Toggle from 'atoms/Toggle';
 import { colors } from 'configs/Const';
 import { v4 as uuid } from 'uuid';
 
@@ -53,7 +53,6 @@ function SelectBox ({
   function renderLabel (item) {
     const kOptionsLabelStyle = {
       fontSize: 17,
-      color: 'rgba(60, 60, 67, 0.6)',
       ...optionsLabelStyle,
     };
     return <Text style={kOptionsLabelStyle}>{item}</Text>;
@@ -133,7 +132,7 @@ function SelectBox ({
     };
     const kMultiOptionsLabelStyle = {
       fontSize: 10,
-      color: colors.white,
+      color: 'white',
       ...multiOptionsLabelStyle,
     };
     return (
@@ -182,7 +181,7 @@ function SelectBox ({
   function multiListEmptyComponent () {
     const kMultiListEmptyLabelStyle = {
       fontSize: 17,
-      color: colors.white,
+      color: '#fff',
       ...multiListEmptyLabelStyle,
     };
     return (
@@ -296,7 +295,7 @@ function SelectBox ({
   function kSelectedItemStyle () {
     return {
       fontSize: 17,
-      color: isEmpty(value.item) ? 'rgba(60, 60, 67, 0.3)' : colors.white,
+      color: isEmpty(value.item) ? 'rgba(255, 255, 255, 0.9)' : '#fff',
       ...selectedItemStyle,
     };
   }

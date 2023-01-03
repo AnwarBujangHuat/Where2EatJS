@@ -14,6 +14,7 @@ import { ModalMenuDetails } from 'molecules/ModalMenuDetails';
 import { ModalWinner } from 'molecules/ModalWinner';
 import { ExpandableFloatingButton } from 'atoms/ExpandableFloatingButton';
 import { colors } from 'configs/Const';
+import { GStyles } from 'configs/Styles';
 
 export const RestaurantComponents = props => {
   const {
@@ -116,9 +117,8 @@ export const RestaurantComponents = props => {
 };
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: colors.bg,
+    ...GStyles.screens,
     paddingBottom: 20,
-    flex: 1,
   },
   header: {
     fontSize: 18,

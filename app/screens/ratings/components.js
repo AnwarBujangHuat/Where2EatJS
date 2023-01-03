@@ -57,7 +57,7 @@ export const RatingComponents = props => {
     );
   };
   return (
-    <SafeAreaView style={styles.container}>
+    <SafeAreaView style={GStyles.screens}>
       <View style={styles.rowContainer}>
         <BackButton onPress={onBackButton} />
         <Text style={styles.header}>
@@ -178,10 +178,6 @@ export const RatingComponents = props => {
   );
 };
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: colors.bg,
-  },
   label: {
     color: colors.white,
     fontSize: 13,

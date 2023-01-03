@@ -6,9 +6,9 @@ import {
   View,
 } from 'react-native';
 import { Header } from 'molecules/Header';
-import personIcon from '../../assets/images/programmer.png';
+import personIcon from 'images/programmer.png';
 import { SearchBar } from 'molecules/SearchBar';
-import search from '../../assets/images/search.png';
+import search from 'images/search.png';
 import {
   colors,
   Const,
@@ -18,6 +18,7 @@ import { RestaurantCard } from 'molecules/RestaurantCard';
 import { FloatingActionButton } from 'atoms/FloatingActionButtom';
 import { ModalMenuButton } from 'molecules/ModalMenuButton';
 import TestIds from '../../../e2e/TestIDs';
+import { GStyles } from 'configs/Styles';
 
 export const HomeComponents = props => {
   const {
@@ -51,7 +52,7 @@ export const HomeComponents = props => {
   };
 
   return (
-    <SafeAreaView testID={TestIds.Home} style={styles.container}>
+    <SafeAreaView testID={TestIds.Home} style={GStyles.screens}>
       <Header
         source={IMAGE ? { uri: IMAGE } : personIcon}
         onPress={openMenu}
@@ -101,10 +102,6 @@ export const HomeComponents = props => {
   );
 };
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: colors.bg,
-  },
   buttonContainer: {
     marginStart: 10,
   },

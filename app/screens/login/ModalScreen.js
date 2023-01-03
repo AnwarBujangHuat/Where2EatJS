@@ -9,7 +9,7 @@ import {
 import { PopulateRestaurantList } from 'store/thunks';
 import { useDispatch } from 'react-redux';
 import LottieView from 'lottie-react-native';
-import Welcome from '../../assets/lottie/welcome.json';
+import Welcome from 'lottie/welcome.json';
 import TestIDs from '../../../e2e/TestIDs';
 import { routes } from 'navigation/routes';
 import { colors } from 'configs/Const';

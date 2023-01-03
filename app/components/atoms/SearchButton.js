@@ -32,7 +32,6 @@ export const SearchButton = ({ onPress, onChangeText, onSearch }) => {
 };
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: colors.secondBg,
     flexDirection: 'row',
     borderRadius: 20,
     alignItems: 'center',

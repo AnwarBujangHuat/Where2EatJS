@@ -18,6 +18,7 @@ import {
 import { ImageButton } from 'atoms/ImageButton';
 import { InputField } from 'atoms/InputField';
 import { ModalLocation } from 'molecules/ModalLocation';
+import { GStyles } from 'configs/Styles';
 
 export const RegisterComponents = props => {
   const {
@@ -41,7 +42,7 @@ export const RegisterComponents = props => {
     isModalOpen,
   } = props;
   return (
-    <SafeAreaView style={styles.container}>
+    <SafeAreaView style={GStyles.screens}>
       <DetailsHeader
         back={goBack}
         disabled={false}
@@ -123,10 +124,6 @@ export const RegisterComponents = props => {
   );
 };
 const styles = StyleSheet.create({
-  container: {
-    backgroundColor: colors.bg,
-    flex: 1,
-  },
   descriptionInput: {
     fontSize: 14,
     fontWeight: 'normal',

@@ -97,7 +97,7 @@ const styles = StyleSheet.create({
   },
   textButton: {
     padding: 5,
-    color: colors.white,
+    color: '#fff',
     fontWeight: 'bold',
     alignSelf: 'center',
     fontSize: 14,

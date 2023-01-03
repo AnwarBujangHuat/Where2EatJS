@@ -17,6 +17,7 @@ import { SocialButton } from 'atoms/SocialButton';
 import { ConstString } from 'configs/Strings';
 import TestIDs from '../../../e2e/TestIDs';
 import { colors } from 'configs/Const';
+import { GStyles } from 'configs/Styles';
 
 export const LoginComponents = props => {
   const {
@@ -31,7 +32,7 @@ export const LoginComponents = props => {
     onRememberMe,
   } = props;
   return (
-    <SafeAreaView style={styles.container}>
+    <SafeAreaView style={GStyles.screens}>
       <TouchableOpacity>
         <Image source={Logo} style={styles.logo} />
       </TouchableOpacity>
@@ -105,10 +106,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     margin: 30,
   },
-  container: {
-    flex: 1,
-    backgroundColor: colors.bg,
-  },
+
   title: {
     fontWeight: 'normal',
     fontSize: 20,

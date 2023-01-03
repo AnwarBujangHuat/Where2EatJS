@@ -40,7 +40,7 @@ export const ModalMenuButton = ({ isModalVisible, onPress, closeModal }) => {
                 data={MENU_OPTIONS}
                 renderItem={({ item }) => {
                   return (
-                    <TouchableOpacity onPress={() => item.onPress(item.id)}>
+                    <TouchableOpacity onPress={() => onPress(item.id)}>
                       <Text style={styles.buttonText}>{item.title}</Text>
                     </TouchableOpacity>
                   );

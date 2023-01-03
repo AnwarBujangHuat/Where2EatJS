@@ -81,7 +81,7 @@ export const SetupMenuComponents = props => {
     });
   };
   return (
-    <SafeAreaView style={styles.container}>
+    <SafeAreaView style={GStyles.screens}>
       <View style={styles.rowContainer}>
         <BackButton onPress={onBackButton} />
         {editorMode && (
@@ -99,7 +99,7 @@ export const SetupMenuComponents = props => {
           fontSize: 16,
           fontWeight: 'bold',
           paddingStart: 15,
-          color: colors.lightPurple,
+          color: colors.primary,
         }}>
         Add Category
       </Text>
@@ -124,7 +124,7 @@ export const SetupMenuComponents = props => {
           multiOptionContainerStyle={{
             backgroundColor: colors.primary,
           }}
-          multiOptionsLabelStyle={{ fontSize: 16, color: colors.white }}
+          multiOptionsLabelStyle={{ fontSize: 16, color: 'white' }}
           selectedItemStyle={{
             fontSize: 16,
             color: colors.white,
@@ -167,7 +167,7 @@ export const SetupMenuComponents = props => {
                     <Text
                       style={{
                         padding: 5,
-                        color: colors.white,
+                        color: 'white',
                         fontWeight: 'bold',
                         fontSize: 12,
                       }}>
@@ -223,10 +223,7 @@ export const SetupMenuComponents = props => {
   );
 };
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: colors.bg,
-  },
+
   label: {
     color: colors.white,
     fontSize: 13,

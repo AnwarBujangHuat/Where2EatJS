@@ -7,11 +7,11 @@ import {
   View,
 } from 'react-native';
 import React from 'react';
-import { BackButton } from 'components/atoms/BackButton';
+import { BackButton } from 'atoms/BackButton';
 import addImage from 'images/addImage.png';
 import logoIcon from 'images/allfood.png';
-import { RateLabel } from 'components/atoms/RateLabel';
-import { SearchButton } from 'components/atoms/SearchButton';
+import { RateLabel } from 'atoms/RateLabel';
+import { SearchButton } from 'atoms/SearchButton';
 import { GStyles } from 'configs/Styles';
 import { colors } from 'configs/Const';
 

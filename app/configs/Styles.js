@@ -10,4 +10,16 @@ export const GStyles = StyleSheet.create({
     shadowRadius: 3,
     elevation: 10,
   },
+  screens: {
+    backgroundColor: colors.bg,
+    flex: 1,
+  },
+  titleText: {
+    fontSize: 16,
+    fontWeight: 'bold',
+    color: colors.white,
+  },
+  descText: {}
+
+
 });
