@@ -1,7 +1,7 @@
 import { createSelector } from '@reduxjs/toolkit';
 import { restaurantAdapter } from './reducer';
 
-const { selectAll, selectById, selectTotal } = restaurantAdapter.getSelectors(
+const { selectAll, selectById } = restaurantAdapter.getSelectors(
   state => state,
 );
 export const getRestaurant = createSelector(
@@ -13,11 +13,6 @@ export const getCurrentRestaurant = id =>
     state => state.restaurant.RESTAURANT,
     state => selectById(state, id),
   );
-export const getLatestIndex = createSelector(
-  state => state.restaurant.RESTAURANT,
-  state => selectTotal(state),
-);
-
 export const getUser = createSelector(
   state => state,
   state => state.restaurant.USER,

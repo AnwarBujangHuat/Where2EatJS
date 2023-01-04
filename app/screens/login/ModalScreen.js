@@ -20,8 +20,7 @@ export const ModalScreen = ({ navigation }) => {
   const dispatch = useDispatch();
 
   const fetch = async() => {
-    const response = await dispatch(PopulateRestaurantList());
-    const { payload } = response;
+    const { payload } = await dispatch(PopulateRestaurantList());
     if (!payload.result) {
       return Alert.alert(
         'Opps',

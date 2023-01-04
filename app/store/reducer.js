@@ -52,7 +52,7 @@ export const Reducer = createSlice({
       return state;
     });
     builder.addCase(AddOne.fulfilled, (state, { meta, payload }) => {
-      const { id, data } = payload;
+      const { id, data } = payload.data;
       const temp = { id: id, ...data };
       restaurantAdapter.addOne(state.RESTAURANT, temp);
       return state;
