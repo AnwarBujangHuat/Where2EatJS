@@ -16,7 +16,7 @@ import facebookIcon from 'images/facebook.png';
 import twitterIcon from 'images/twitter.png';
 import googleIcon from 'images/google.png';
 
-const theme = 0;
+const theme = 1;
 export const icons = {
   [ConstString.WESTERN]: burgerIcon,
   [ConstString.MALAY]: malayIcon,
