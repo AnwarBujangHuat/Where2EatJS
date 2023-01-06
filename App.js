@@ -7,7 +7,7 @@ export default function App () {
   return (
     <NavigationContainer>
       {/*<StatusBar barStyle={'dark-content'} />*/}
-      <StatusBar barStyle={'light-content'} />
+      <StatusBar barStyle={'dark-content'} />
       <NavStack />
     </NavigationContainer>
   );
