@@ -10,7 +10,6 @@ import personIcon from 'images/programmer.png';
 import { SearchBar } from 'molecules/SearchBar';
 import search from 'images/search.png';
 import {
-  colors,
   Const,
 } from 'configs/Const';
 import { ImageButton } from 'atoms/ImageButton';
