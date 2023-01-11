@@ -8,9 +8,7 @@ import {
   TouchableOpacity,
   View,
 } from 'react-native';
-import logoIcon from 'images/allfood.png';
 
-import locationIcon from 'images/location.png';
 import FastImage from 'react-native-fast-image';
 import {
   colors,
@@ -18,6 +16,7 @@ import {
 } from 'configs/Const';
 import Modal from 'react-native-modal';
 import { GStyles } from 'configs/styles';
+import { ConstString } from 'configs/Strings';
 
 const { width } = Dimensions.get('window');
 export const ModalWinner = ({
@@ -73,7 +72,7 @@ export const ModalWinner = ({
                   {category + ' - ' + description}
                 </Text>
                 <View style={styles.containerIcon}>
-                  <Image style={styles.icon} source={locationIcon} />
+                  <Image style={styles.icon} source={icons[ConstString.LOCATION]} />
                   <Text style={styles.address}>{address}</Text>
                 </View>
               </View>
@@ -99,7 +98,7 @@ export const ModalWinner = ({
               </View>
             </View>
             <TouchableOpacity style={styles.logoContainer}>
-              <Image style={styles.logoIcon} source={logoIcon} />
+              <Image style={styles.logoIcon} source={icons[ConstString.LOGO]} />
             </TouchableOpacity>
           </Modal>
         </SafeAreaView>

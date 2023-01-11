@@ -6,9 +6,12 @@ import {
   View,
 } from 'react-native';
 import React from 'react';
-import startIcon from 'images/star.png';
-import startIcon2 from 'images/star2.png';
-import { colors } from 'configs/Const';
+
+import {
+  colors,
+  icons,
+} from 'configs/Const';
+import { ConstString } from 'configs/Strings';
 
 export const RateLabel = ({ rating, goToRating }) => {
   const restaurantRate = rating?.toFixed(1);
@@ -17,7 +20,7 @@ export const RateLabel = ({ rating, goToRating }) => {
       <View style={styles.container}>
         <Text style={styles.textRate}>{restaurantRate}</Text>
         <Image
-          source={rating > 4.2 ? startIcon2 : startIcon}
+          source={rating > 4.2 ? icons[ConstString.STAR1] : icons[ConstString.STAR2]}
           style={styles.icon}
         />
       </View>

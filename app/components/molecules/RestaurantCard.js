@@ -8,7 +8,6 @@ import {
   View,
 } from 'react-native';
 import { RateLabel } from 'atoms/RateLabel';
-import locationIcon from 'images/location.png';
 import {
   colors,
   icons,
@@ -16,6 +15,7 @@ import {
 import addImage from 'images/addImage.png';
 import FastImage from 'react-native-fast-image';
 import { GStyles } from 'configs/styles';
+import { ConstString } from 'configs/Strings';
 
 export const RestaurantCard = ({
   onPress,
@@ -51,7 +51,7 @@ export const RestaurantCard = ({
                 {category + ' - ' + description}
               </Text>
               <View style={styles.containerIcon}>
-                <Image style={styles.icon} source={locationIcon} />
+                <Image style={styles.icon} source={icons[ConstString.LOCATION]} />
                 <Text style={styles.desc}>{address}</Text>
               </View>
             </View>

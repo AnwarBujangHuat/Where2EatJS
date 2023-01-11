@@ -6,8 +6,11 @@ import {
   View,
 } from 'react-native';
 import React from 'react';
-import editIcon from 'images/editing.png';
-import { colors } from 'configs/Const';
+import {
+  colors,
+  icons,
+} from 'configs/Const';
+import { ConstString } from 'configs/Strings';
 
 export const EditableLabel = ({ onPress, title, information, icon }) => {
   return (
@@ -19,7 +22,7 @@ export const EditableLabel = ({ onPress, title, information, icon }) => {
           <Text style={styles.information}>{information}</Text>
         </View>
         <TouchableOpacity onPress={onPress}>
-          <Image style={styles.icon} source={editIcon} />
+          <Image style={styles.icon} source={icons[ConstString.EDIT]} />
         </TouchableOpacity>
       </View>
     </View>

@@ -9,11 +9,14 @@ import {
 import React from 'react';
 import { BackButton } from 'atoms/BackButton';
 import addImage from 'images/addImage.png';
-import logoIcon from 'images/allfood.png';
 import { RateLabel } from 'atoms/RateLabel';
 import { SearchButton } from 'atoms/SearchButton';
 import { GStyles } from 'configs/styles';
-import { colors } from 'configs/Const';
+import {
+  colors,
+  icons,
+} from 'configs/Const';
+import { ConstString } from 'configs/Strings';
 
 const { width } = Dimensions.get('window');
 
@@ -53,7 +56,7 @@ export const DetailsHeader = ({
           </View>
 
           <TouchableOpacity style={styles.logoContainer} disabled={disabled}>
-            <Image style={styles.icons} source={logoIcon} />
+            <Image style={styles.icons} source={icons[ConstString.LOGO]} />
           </TouchableOpacity>
         </ImageBackground>
       </TouchableOpacity>

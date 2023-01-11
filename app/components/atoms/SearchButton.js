@@ -6,16 +6,19 @@ import {
   TouchableOpacity,
 } from 'react-native';
 import React from 'react';
-import searchIcon from 'images/search.png';
-import { colors } from 'configs/Const';
+import {
+  colors,
+  icons,
+} from 'configs/Const';
 import { GStyles } from 'configs/styles';
+import { ConstString } from 'configs/Strings';
 
 const { width } = Dimensions.get('window');
 
 export const SearchButton = ({ onPress, onChangeText, onSearch }) => {
   return (
     <TouchableOpacity style={styles.container} onPress={onPress}>
-      <Image style={styles.icons} source={searchIcon} />
+      <Image style={styles.icons} source={icons[ConstString.SEARCH]} />
       {onSearch && (
         <TextInput
           style={styles.input}

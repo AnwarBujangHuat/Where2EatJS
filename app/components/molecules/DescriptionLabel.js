@@ -6,9 +6,12 @@ import {
   View,
 } from 'react-native';
 import React from 'react';
-import locationIcon from 'images/location.png';
 import { GStyles } from 'configs/styles';
-import { colors } from 'configs/Const';
+import {
+  colors,
+  icons,
+} from 'configs/Const';
+import { ConstString } from 'configs/Strings';
 
 export const DescriptionLabel = ({ name, location, icon, onPress }) => {
   return (
@@ -20,7 +23,7 @@ export const DescriptionLabel = ({ name, location, icon, onPress }) => {
         </TouchableOpacity>
       </View>
       <View style={{ flexDirection: 'row' }}>
-        <Image style={styles.locationIcon} source={locationIcon} />
+        <Image style={styles.locationIcon} source={icons[ConstString.LOCATION]} />
         <Text style={styles.desc}>{location}</Text>
       </View>
     </View>

@@ -31,4 +31,11 @@ export const ConstString = {
   TWITTER: 'Twitter',
   GOOGLE: 'Google',
   LOCATION: 'Location',
+  BACK: 'back',
+  DETAILS: 'Details',
+  STAR1: 'star1',
+  STAR2: 'star2',
+  SEARCH: 'search',
+  LOGO: 'Logo',
+  PLUS: 'Plus',
 };

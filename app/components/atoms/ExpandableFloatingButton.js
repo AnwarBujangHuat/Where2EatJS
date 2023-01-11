@@ -4,17 +4,17 @@ import {
 } from 'react-native';
 import React from 'react';
 import { FloatingAction } from 'react-native-floating-action';
-import Menu from 'images/cheeseburger.png';
-import Details from 'images/details.png';
-import Edit from 'images/edit.png';
 import { ConstString } from 'configs/Strings';
-import { colors } from 'configs/Const';
+import {
+  colors,
+  icons,
+} from 'configs/Const';
 import { GStyles } from 'configs/styles';
 
 const actions = [
   {
     text: 'Restaurant Details',
-    icon: Details,
+    icon: icons[ConstString.DETAILS],
     name: ConstString.EDIT,
     position: 2,
     color: colors.primary,
@@ -23,7 +23,7 @@ const actions = [
   },
   {
     text: 'Menu',
-    icon: Menu,
+    icon: icons[ConstString.WESTERN],
     name: ConstString.MENU,
     position: 1,
     color: colors.primary,
@@ -37,7 +37,7 @@ export const ExpandableFloatingButton = ({ onPressItem }) => {
       <FloatingAction
         actions={actions}
         buttonSize={60}
-        floatingIcon={Edit}
+        floatingIcon={icons[ConstString.EDIT]}
         iconWidth={28}
         iconHeight={28}
         color={colors.primary}

@@ -6,9 +6,12 @@ import {
   View,
 } from 'react-native';
 import React from 'react';
-import star from 'images/star2.png';
-import { colors } from 'configs/Const';
+import {
+  colors,
+  icons,
+} from 'configs/Const';
 import { GStyles } from 'configs/styles';
+import { ConstString } from 'configs/Strings';
 
 export const RatingButton = ({ onPress, rating, selected }) => {
   let backGroundColor = rating === selected ? colors.primary : colors.secondBg;
@@ -18,7 +21,7 @@ export const RatingButton = ({ onPress, rating, selected }) => {
       <TouchableOpacity
         style={{ ...styles.inputContainer, backgroundColor: backGroundColor }}
         onPress={() => onPress(rating)}>
-        <Image source={star} style={styles.icon} />
+        <Image source={icons[ConstString.STAR2]} style={styles.icon} />
         <Text
           style={{
             padding: 5,

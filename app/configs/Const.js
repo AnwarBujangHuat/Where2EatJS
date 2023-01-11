@@ -15,6 +15,15 @@ import appetizerIcon from 'images/appetizer.png';
 import facebookIcon from 'images/facebook.png';
 import twitterIcon from 'images/twitter.png';
 import googleIcon from 'images/google.png';
+import backButton from 'images/back.png';
+import editIcon from 'images/editing.png';
+import detailsIcon from 'images/details.png';
+import starIcon from 'images/star.png';
+import starIcon2 from 'images/star2.png';
+import searchIcon from 'images/search.png';
+import locationIcon from 'images/location.png';
+import logoIcon from 'images/allfood.png';
+import plusIcon from 'images/plus.png';
 
 const theme = 1;
 export const icons = {
@@ -34,6 +43,16 @@ export const icons = {
   [ConstString.GOOGLE]: googleIcon,
   [ConstString.TWITTER]: twitterIcon,
   [ConstString.FACEBOOK]: facebookIcon,
+  [ConstString.BACK]: backButton,
+  [ConstString.EDIT]: editIcon,
+  [ConstString.DETAILS]: detailsIcon,
+  [ConstString.STAR1]: starIcon,
+  [ConstString.STAR2]: starIcon2,
+  [ConstString.SEARCH]: searchIcon,
+  [ConstString.LOCATION]: locationIcon,
+  [ConstString.LOGO]: logoIcon,
+  [ConstString.PLUS]: plusIcon,
+
   def: burgerIcon,
   defMenu: sideIcon,
 };
