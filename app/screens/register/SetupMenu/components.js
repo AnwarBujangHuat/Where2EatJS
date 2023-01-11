@@ -12,14 +12,16 @@ import {
 import { BackButton } from 'atoms/BackButton';
 import { ConstString } from 'configs/Strings';
 import { xorBy } from 'lodash';
-import addIcon from 'images/plus.png';
 import { ModalMenu } from 'molecules/ModalMenu';
 import { ModalUploading } from 'molecules/ModalUploading';
 import { ModalMenuDetails } from 'molecules/ModalMenuDetails';
 import { FoodCard } from 'molecules/FoodCard';
 import { SearchButton } from 'atoms/SearchButton';
 import { GStyles } from 'configs/styles';
-import { colors } from 'configs/Const';
+import {
+  colors,
+  icons,
+} from 'configs/Const';
 import MultiPickerBox from 'molecules/MultiPickerBox';
 
 export const SetupMenuComponents = props => {
@@ -163,7 +165,7 @@ export const SetupMenuComponents = props => {
                     onPress={() => {
                       onPressAdd({ item: category });
                     }}>
-                    <Image style={styles.addIcon} source={addIcon} />
+                    <Image style={styles.addIcon} source={icons[ConstString.ADD]} />
                     <Text
                       style={{
                         padding: 5,

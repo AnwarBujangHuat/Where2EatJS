@@ -24,6 +24,8 @@ import searchIcon from 'images/search.png';
 import locationIcon from 'images/location.png';
 import logoIcon from 'images/allfood.png';
 import plusIcon from 'images/plus.png';
+import emailIcon from 'images/email.png';
+import passwordIcon from 'images/password.png';
 
 const theme = 1;
 export const icons = {
@@ -52,6 +54,8 @@ export const icons = {
   [ConstString.LOCATION]: locationIcon,
   [ConstString.LOGO]: logoIcon,
   [ConstString.PLUS]: plusIcon,
+  [ConstString.EMAIL]: emailIcon,
+  [ConstString.PASSWORD]: passwordIcon,
 
   def: burgerIcon,
   defMenu: sideIcon,

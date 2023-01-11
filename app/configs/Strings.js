@@ -38,4 +38,6 @@ export const ConstString = {
   SEARCH: 'search',
   LOGO: 'Logo',
   PLUS: 'Plus',
+  EMAIL: 'Email',
+  PASSWORD: 'Password',
 };

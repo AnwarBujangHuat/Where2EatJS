@@ -12,12 +12,15 @@ import { Rating } from 'react-native-ratings';
 import React from 'react';
 import { BackButton } from 'atoms/BackButton';
 import { RatingCard } from 'molecules/RatingCard';
-import addIcon from 'images/plus.png';
 import { ModalGiveRating } from 'molecules/ModalGiveRating';
 import { BarChart } from 'react-native-chart-kit';
 import { RatingButton } from 'atoms/RatingButton';
-import { colors } from 'configs/Const';
+import {
+  colors,
+  icons,
+} from 'configs/Const';
 import { GStyles } from 'configs/styles';
+import { ConstString } from 'configs/Strings';
 
 export const RatingComponents = props => {
   const {
@@ -139,7 +142,7 @@ export const RatingComponents = props => {
         <View style={{ flexDirection: 'row', marginBottom: 10 }}>
           <Text style={styles.header}>Your Review</Text>
           <TouchableOpacity style={styles.buttonContainer} onPress={openModal}>
-            <Image style={styles.addIcon} source={addIcon} />
+            <Image style={styles.addIcon} source={icons[ConstString.ADD]} />
             <Text
               style={{
                 padding: 5,

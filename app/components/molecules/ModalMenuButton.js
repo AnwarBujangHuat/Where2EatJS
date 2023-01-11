@@ -13,21 +13,7 @@ import { colors } from 'configs/Const';
 
 const { width } = Dimensions.get('window');
 
-export const ModalMenuButton = ({ isModalVisible, onPress, closeModal }) => {
-  const MENU_OPTIONS = [
-    {
-      id: 1,
-      title: 'Register New Restaurant',
-    },
-    {
-      id: 2,
-      title: 'Profile',
-    },
-    {
-      id: 3,
-      title: 'Log Out',
-    },
-  ];
+export const ModalMenuButton = ({ isModalVisible, onPress, closeModal, menuOptions }) => {
   return (
     <>
       {{ isModalVisible } && (
@@ -37,7 +23,7 @@ export const ModalMenuButton = ({ isModalVisible, onPress, closeModal }) => {
             onBackdropPress={closeModal}>
             <View style={styles.modalView}>
               <FlatList
-                data={MENU_OPTIONS}
+                data={menuOptions}
                 renderItem={({ item }) => {
                   return (
                     <TouchableOpacity onPress={() => onPress(item.id)}>

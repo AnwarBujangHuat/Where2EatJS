@@ -8,9 +8,9 @@ import {
 import { Header } from 'molecules/Header';
 import personIcon from 'images/programmer.png';
 import { SearchBar } from 'molecules/SearchBar';
-import search from 'images/search.png';
 import {
   Const,
+  icons,
 } from 'configs/Const';
 import { ImageButton } from 'atoms/ImageButton';
 import { RestaurantCard } from 'molecules/RestaurantCard';
@@ -18,7 +18,22 @@ import { FloatingActionButton } from 'atoms/FloatingActionButtom';
 import { ModalMenuButton } from 'molecules/ModalMenuButton';
 import TestIds from '../../../e2e/TestIDs';
 import { GStyles } from 'configs/styles';
+import { ConstString } from 'configs/Strings';
 
+const MENU_OPTIONS = [
+  {
+    id: 1,
+    title: 'Register New Restaurant',
+  },
+  {
+    id: 2,
+    title: 'Profile',
+  },
+  {
+    id: 3,
+    title: 'Log Out',
+  },
+];
 export const HomeComponents = props => {
   const {
     selectedTypes,
@@ -62,12 +77,13 @@ export const HomeComponents = props => {
           isModalVisible={isOpenMenu}
           onPress={onNavigate}
           closeModal={closeModal}
+          menuOptions={MENU_OPTIONS}
         />
       )}
       <SearchBar
         placeholder={'Search'}
         onChangeText={onSearch}
-        source={search}
+        source={icons[ConstString.SEARCH]}
       />
       <View style={styles.buttonContainer}>
         <FlatList
