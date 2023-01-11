@@ -23,7 +23,7 @@ const styles = StyleSheet.create({
     ...GStyles.shadowContainer,
     alignSelf: 'flex-start',
     borderRadius: 40,
-    padding: 10,
+    padding: 11,
     marginStart: 10,
   },
   icons: {
