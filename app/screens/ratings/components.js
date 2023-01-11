@@ -142,7 +142,7 @@ export const RatingComponents = props => {
         <View style={{ flexDirection: 'row', marginBottom: 10 }}>
           <Text style={styles.header}>Your Review</Text>
           <TouchableOpacity style={styles.buttonContainer} onPress={openModal}>
-            <Image style={styles.addIcon} source={icons[ConstString.ADD]} />
+            <Image style={styles.addIcon} source={icons[ConstString.PLUS]} />
             <Text
               style={{
                 padding: 5,

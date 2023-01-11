@@ -8,15 +8,15 @@ import {
   View,
 } from 'react-native';
 import CheckBox from '@react-native-community/checkbox';
-import Logo from 'images/allfood.png';
 import { InputFieldLogins } from 'molecules/InputFieldLogins';
-import email from 'images/email.png';
-import password from 'images/password.png';
 import { IconButton } from 'molecules/IconButton';
 import { SocialButton } from 'atoms/SocialButton';
 import { ConstString } from 'configs/Strings';
 import TestIDs from '../../../e2e/TestIDs';
-import { colors } from 'configs/Const';
+import {
+  colors,
+  icons,
+} from 'configs/Const';
 import { GStyles } from 'configs/styles';
 
 export const LoginComponents = props => {
@@ -34,7 +34,7 @@ export const LoginComponents = props => {
   return (
     <SafeAreaView style={GStyles.screens}>
       <TouchableOpacity>
-        <Image source={Logo} style={styles.logo} />
+        <Image source={icons[ConstString.LOGO]} style={styles.logo} />
       </TouchableOpacity>
       <View style={styles.inputContainer}>
         <Text style={styles.title}>Sign In</Text>
@@ -43,7 +43,7 @@ export const LoginComponents = props => {
           hint={'Email'}
           defvalue={Email}
           onChangeText1={onChangeInputEmail}
-          source={email}
+          source={icons[ConstString.EMAIL]}
           secret={false}
         />
         <InputFieldLogins
@@ -51,7 +51,7 @@ export const LoginComponents = props => {
           hint={'Password'}
           defvalue={Password}
           onChangeText1={onChangeInputPassword}
-          source={password}
+          source={icons[ConstString.PASSWORD]}
           secret={true}
         />
         <View style={styles.checkboxContainer}>

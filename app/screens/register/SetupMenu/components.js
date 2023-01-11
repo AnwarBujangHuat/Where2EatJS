@@ -165,7 +165,7 @@ export const SetupMenuComponents = props => {
                     onPress={() => {
                       onPressAdd({ item: category });
                     }}>
-                    <Image style={styles.addIcon} source={icons[ConstString.ADD]} />
+                    <Image style={styles.addIcon} source={icons[ConstString.PLUS]} />
                     <Text
                       style={{
                         padding: 5,
